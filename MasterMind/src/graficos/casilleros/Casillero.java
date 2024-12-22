@@ -59,7 +59,7 @@ public class Casillero extends JPanel {
 	private boolean finJuego;
 
 	/**
-	 * Inicia el casillero con un determinado de filas y columnas. Inicia la
+	 * Inicia el casillero con un determinado número de filas y columnas. Inicia la
 	 * variable finJuego en false. Marca el foco en la casilla 0,0.
 	 * 
 	 * @param filas
@@ -92,8 +92,8 @@ public class Casillero extends JPanel {
 	}
 
 	/**
-	 * Cambia el color de la casilla para que el jugador sepa cuÃ¡l se va a
-	 * modificar. Actualiza la posiciÃ³n de la fila y columna actual. Si la columna
+	 * Cambia el color de la casilla para que el jugador sepa cuál se va a
+	 * modificar. Actualiza la posición de la fila y columna actual. Si la columna
 	 * excede su rango se coloca en el lado opuesto.
 	 * 
 	 * @param fila    identifica la fila de la casilla
@@ -131,13 +131,13 @@ public class Casillero extends JPanel {
 	}
 
 	/**
-	 * Devuelve la casilla que se encentra en la posiciÃ³n requerida.
+	 * Devuelve la casilla que se encuentra en la posición requerida.
 	 * 
 	 * @param fila    de la casilla
 	 * @param columna de la casilla
 	 * @return casillaJugada
 	 */
-	public CasillaJugada getCasillas(int fila, int columna) {
+	public CasillaJugada getCasilla(int fila, int columna) {
 		return casillaJugadas[fila][columna];
 	}
 
@@ -169,7 +169,7 @@ public class Casillero extends JPanel {
 //	}
 
 //	/**
-//	 * Modifica la situaciÃ³n de la variable victoria.
+//	 * Modifica la situación de la variable victoria.
 //	 * 
 //	 * @param victoria
 //	 */

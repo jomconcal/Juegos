@@ -33,12 +33,12 @@ public class Tablero extends JFrame {
 	private Solucionario solucionario;
 
 	/**
-	 * Pistas con las casillas que ir√°n ayudando al jugador.
+	 * Casillas con las pistas que ir·n ayudando al jugador.
 	 */
 	private Pistas pistas;
 
 	/**
-	 * Panel encargado de recibir las acciones que realizar√° el jugador.
+	 * Panel encargado de recibir las acciones que realizar· el jugador.
 	 */
 	private PanelReiniciar panelReiniciar;
 
@@ -53,7 +53,7 @@ public class Tablero extends JFrame {
 	private int columnas;
 
 	/**
-	 * Inicia el tablero con un n√∫mero de filas y columnas.
+	 * Inicia el tablero con un n˙mero de filas y columnas.
 	 * 
 	 * @param filas
 	 * @param columnas
@@ -72,7 +72,7 @@ public class Tablero extends JFrame {
 	}
 
 	/**
-	 * Funci√≥n que inicia los elementos del tablero con el mismo n√∫mero de filas y
+	 * FunciÛn que inicia los elementos del tablero con el mismo n˙mero de filas y
 	 * columnas.
 	 * 
 	 * @param filas
@@ -97,8 +97,8 @@ public class Tablero extends JFrame {
 	}
 
 	/**
-	 * Inicializaci√≥n del panel de acciones fuera del constructor para no resultar
-	 * nulo. Ya que necesita Tablero como par√°metro.
+	 * InicializaciÛn del panel de acciones fuera del constructor para no resultar
+	 * nulo. Ya que necesita Tablero como par·metro.
 	 */
 	public void iniciarPanelAcciones() {
 		this.addKeyListener(new AccionFlechas(this));

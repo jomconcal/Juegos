@@ -13,7 +13,7 @@ import aplicacion.Main;
 import graficos.casillas.CasillaSolucion;
 
 /**
- * Casillero que recibe las casillas con la soluci√≥n.
+ * Casillero que recibe las casillas con la soluciÛn.
  * 
  * @author jomco
  * @version 2
@@ -27,18 +27,18 @@ public class Solucionario extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Array con las casillas con la soluci√≥n
+	 * Array con las casillas con la soluciÛn
 	 */
 	private CasillaSolucion[] casillasSolucion;
 
 	/**
-	 * Etiqueta que muestra un mensaje para mantener la soluci√≥n oculta hasta el
+	 * Etiqueta que muestra un mensaje para mantener la soluciÛn oculta hasta el
 	 * final del juego.
 	 */
 	private JLabel solucionOculta;
 
 	/**
-	 * Inicia el solucionario con un n√∫mero determinado de columnas.
+	 * Inicia el solucionario con un n˙mero determinado de columnas.
 	 * 
 	 * @param columnas
 	 */
@@ -54,7 +54,7 @@ public class Solucionario extends JPanel {
 
 	/**
 	 * Muestra la solucion una vez que el jugador haya terminado el juego. Si ha
-	 * acabado vistorioso, mostrar√° adem√°s una cara sonriente, si no una triste.
+	 * acabado vistorioso, mostrar· adem·s una cara sonriente, si no una triste.
 	 */
 	public void mostrarResultado(boolean victoria) {
 		setLayout(new GridLayout(1, 5));
@@ -77,7 +77,7 @@ public class Solucionario extends JPanel {
 	}
 
 	/**
-	 * Inicia las casillas con la soluci√≥n
+	 * Inicia las casillas con la soluciÛn
 	 */
 	private void rellenarCasillas() {
 		for (int i = 0; i < casillasSolucion.length; i++) {
@@ -87,7 +87,7 @@ public class Solucionario extends JPanel {
 	}
 
 	/**
-	 * Devuelve las casillas con la soluci√≥n.
+	 * Devuelve las casillas con la soluciÛn.
 	 * 
 	 * @return CasillaSolucion[]
 	 */
@@ -96,12 +96,12 @@ public class Solucionario extends JPanel {
 	}
 
 	/**
-	 * Devuelve una √∫nica casilla identificada por su posici√≥n.
+	 * Devuelve una ˙nica casilla identificada por su posiciÛn.
 	 * 
 	 * @param columna
 	 * @return CasillaSolucion
 	 */
-	public CasillaSolucion getCasillaSolucione(int columna) {
+	public CasillaSolucion getCasillaSolucion(int columna) {
 		return this.casillasSolucion[columna];
 	}
 }

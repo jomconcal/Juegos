@@ -18,12 +18,12 @@ public class PanelReiniciar extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Bot√≥n para reiniciar el juego.
+	 * BotÛn para reiniciar el juego.
 	 */
 	private JButton reiniciar;
 
 	/**
-	 * Inicia el panel recibiendo como par√°metros los casilleros que debe manipular.
+	 * Inicia el panel recibiendo como par·metros los casilleros que debe manipular.
 	 * 
 	 * @param casillero
 	 * @param solucionario

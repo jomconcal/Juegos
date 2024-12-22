@@ -7,7 +7,7 @@ import javax.swing.JPanel;
 import graficos.casillas.CasillaPista;
 
 /**
- * Casillero que recibe las pistas que ver√° el jugador.
+ * Casillero que recibe las pistas que ver· el jugador.
  * 
  * @author jomco
  * @version 2
@@ -21,7 +21,7 @@ public class Pistas extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Array con las diferentes pistas que recibir√° el jugador.
+	 * Array con las diferentes pistas que recibir· el jugador.
 	 */
 	private CasillaPista[] pistas;
 
@@ -29,7 +29,7 @@ public class Pistas extends JPanel {
 	 * Inicia el casillero con las pistas en blanco. Se colocan en una fila
 	 * vertical.
 	 * 
-	 * @param filas dimensi√≥n del casillero.
+	 * @param filas dimensiÛn del casillero.
 	 */
 	public Pistas(int filas) {
 		this.setLayout(new GridLayout(filas, 1));

@@ -10,7 +10,7 @@ import graficos.casilleros.Tablero;
 import logica.Logica;
 
 /**
- * Acci贸n que permite con las flechas cambiar la casilla que tiene el foco o
+ * Acci髇 que permite con las flechas cambiar la casilla que tiene el foco o
  * cambiar el color de la casilla que recibe el foco.
  * 
  * @author jomco
@@ -40,20 +40,20 @@ public class AccionFlechas extends KeyAdapter {
 	private Solucionario solucionario;
 
 	/**
-	 * Fila de la casilla que recibe la acci贸n.
+	 * Fila de la casilla que recibe la acci髇.
 	 */
 	private int fila;
 
 	/**
-	 * Fila de la columna que recibe la acci贸n.
+	 * Columna de la casilla que recibe la acci髇.
 	 */
 	private int columna;
 
 	/**
-	 * Inicia el la clase de la acci贸n recogiendo el casillero y la fila y columna
+	 * Inicia la clase de la acci髇 recogiendo el casillero y la fila y columna
 	 * que tienen actualmente el foco.
 	 * 
-	 * @param casillero
+	 * @param tablero
 	 */
 	public AccionFlechas(Tablero tablero) {
 		this.tablero=tablero;
@@ -68,9 +68,9 @@ public class AccionFlechas extends KeyAdapter {
 	public void keyPressed(KeyEvent e) {
 		this.fila = casillero.getFilaActual();
 		this.columna = casillero.getColumnaActual();
-		int colorActual = casillero.getCasillas(fila, columna).getNumColor();
+		int colorActual = casillero.getCasilla(fila, columna).getNumColor();
 		// Si se presiona la tecla derecha se desplaza el foco a la derecha. Si excede
-		// del l铆mite vuelve a la casilla inicial.
+		// del l韒ite vuelve a la casilla inicial.
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
 			casillero.focus(fila, columna + 1);
 			casillero.unFocus(fila, columna);
@@ -78,22 +78,22 @@ public class AccionFlechas extends KeyAdapter {
 
 		// Si se presiona la tecla izquierda se desplaza el foco a la izquierda. Si
 		// excede
-		// del l铆mite vuelve a la casilla final.
+		// del l韒ite vuelve a la casilla final.
 		if (e.getKeyCode() == KeyEvent.VK_LEFT) {
 			casillero.focus(fila, columna - 1);
 			casillero.unFocus(fila, columna);
 		}
 
 		// Si se presiona la tecla abajo se modifica el color de la casilla de forma
-		// ascendente. Si excede del l铆mite vuelve al color inicial.
+		// ascendente. Si excede del l韒ite vuelve al color inicial.
 		if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-			casillero.getCasillas(fila, columna).setColor(colorActual + 1);
+			casillero.getCasilla(fila, columna).setColor(colorActual + 1);
 		}
 
 		// Si se presiona la tecla arriba se modifica el color de la casilla de forma
-		// descendente. Si excede del l铆mite vuelve al color final.
+		// descendente. Si excede del l韒ite vuelve al color final.
 		if (e.getKeyCode() == KeyEvent.VK_UP) {
-			casillero.getCasillas(fila, columna).setColor(colorActual - 1);
+			casillero.getCasilla(fila, columna).setColor(colorActual - 1);
 		}
 
 		// Si se presiona la tecla enter se pasa el foco a la siguiente fila y se

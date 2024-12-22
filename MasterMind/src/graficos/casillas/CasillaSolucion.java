@@ -11,7 +11,7 @@ import javax.swing.border.BevelBorder;
 import graficos.Colores;
 
 /**
- * Casilla que recogerÃ¡ la soluciÃ³n que debe encontrar el jugador.
+ * Casilla que recogerá la solución que debe encontrar el jugador.
  * 
  * @author jomco
  * @version 2
@@ -25,17 +25,17 @@ public class CasillaSolucion extends JPanel {
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Etiqueta para colocar el color de la soluciÃ³n.
+	 * Etiqueta para colocar el color de la solución.
 	 */
 	private JLabel solucion;
 
 	/**
-	 * Color de la soluciÃ³n.
+	 * Color de la solución.
 	 */
 	private ImageIcon color;
 
 	/**
-	 * NÃºmero que identifica la posiciÃ³n del elemento del numerador que representa
+	 * Número que identifica la posición del elemento del enumerado que representa
 	 * el color.
 	 */
 	private int numColor;
@@ -47,7 +47,7 @@ public class CasillaSolucion extends JPanel {
 	private boolean comprobada;
 
 	/**
-	 * Inicia la casilla con la comprobaciÃ³n en false.
+	 * Inicia la casilla con la comprobación en false.
 	 */
 	public CasillaSolucion() {
 
@@ -63,7 +63,7 @@ public class CasillaSolucion extends JPanel {
 	}
 
 	/**
-	 * Elige un color del numerador identificado entre 0 y 5 de forma aleatoria. Se
+	 * Elige un color del enumerado identificado entre 0 y 5 de forma aleatoria. Se
 	 * utiliza en el constructor.
 	 * 
 	 * @return
@@ -74,7 +74,7 @@ public class CasillaSolucion extends JPanel {
 	}
 
 	/**
-	 * NÃºmero que identifica la posiciÃ³n del elemento del numerador que representa
+	 * Número que identifica la posición del elemento del enumerado que representa
 	 * el color.
 	 * 
 	 * @return
@@ -84,7 +84,7 @@ public class CasillaSolucion extends JPanel {
 	}
 
 	/**
-	 * Estado de comprobaciÃ³n de la casilla
+	 * Estado de comprobación de la casilla
 	 * @return
 	 */
 	public boolean isComprobada() {
@@ -92,7 +92,7 @@ public class CasillaSolucion extends JPanel {
 	}
 
 	/**
-	 * Modificar la situaciÃ³n de la casilla una vez comprobada.
+	 * Modificar la situación de la casilla una vez comprobada.
 	 * @param comprobada
 	 */
 	public void setComprobada(boolean comprobada) {

@@ -11,9 +11,9 @@ import javax.swing.border.BevelBorder;
 import graficos.Colores;
 
 /**
- * Casilla para informar al jugador de c√∫antos colores ha acertado. Por cada
- * acierto fuera de lugar recibir√° una pista de color blanco. Por cada acierto
- * bien colocado recibir√° una pista de color negro.
+ * Casilla para informar al jugador de cu·ntos colores ha acertado. Por cada
+ * acierto fuera de lugar recibir· una pista de color blanco. Por cada acierto
+ * bien colocado recibir· una pista de color negro.
  * 
  * @author jomco
  * @version 2
@@ -43,7 +43,7 @@ public class CasillaPista extends JPanel {
 	}
 
 	/**
-	 * Coloca por primera vez las pistas sin ning√∫n color. Se usa en el constructor.
+	 * Coloca por primera vez las pistas sin ning˙n color. Se usa en el constructor.
 	 */
 	private void colocarPistas() {
 		for (int i = 0; i < pistas.length; i++) {
@@ -55,20 +55,20 @@ public class CasillaPista extends JPanel {
 	/**
 	 * Modifica las pistas tras el turno del jugador.
 	 * 
-	 * @param aciertos array de longitud dos. En la posici√≥n 0 recoge el n√∫mero de
-	 *                 aciertos que est√°n en su lugar. En la posici√≥n 1 recoge el
-	 *                 n√∫mero de aciertos que est√°n fuera de lugar.
+	 * @param aciertos array de longitud dos. En la posiciÛn 0 recoge el n˙mero de
+	 *                 aciertos que est·n en su lugar. En la posiciÛn 1 recoge el
+	 *                 n˙mero de aciertos que est·n fuera de lugar.
 	 */
 	public void colocarPistas(int[] aciertos) {
 		ImageIcon blanco = Colores.BLANCO.getColor();
 		ImageIcon negro = Colores.NEGRO.getColor();
 
 		int posicion = 0;
-		//Por cada acierto en su lugar coloca una pista negra
+		// Por cada acierto en su lugar coloca una pista negra
 		for (int i = 0; i < aciertos[0]; i++) {
 			pistas[posicion++].setIcon(negro);
 		}
-		//Por cada acierto fuera de lugar coloca una pista blanca
+		// Por cada acierto fuera de lugar coloca una pista blanca
 		for (int i = 0; i < aciertos[1]; i++) {
 			pistas[posicion++].setIcon(blanco);
 		}

@@ -9,7 +9,7 @@ import javax.swing.border.BevelBorder;
 import graficos.Colores;
 
 /**
- * Casilla para colocar que el jugador coloque el color que puede ser la
+ * Casilla para que el jugador coloque el color que puede ser la
  * respuesta.
  * 
  * @author jomco
@@ -29,7 +29,7 @@ public class CasillaJugada extends JPanel {
 	private JLabel color;
 	
 	/**
-	 * NÃºmero que identifica la posiciÃ³n del elemento del numerador que representa
+	 * Número que identifica la posición del elemento del numerador que representa
 	 * el color.
 	 */
 	private int numColor;
@@ -63,7 +63,7 @@ public class CasillaJugada extends JPanel {
 	}
 
 	/**
-	 * NÃºmero que identifica la posiciÃ³n del elemento del numerador que representa
+	 * Número que identifica la posición del elemento del enumerado que representa
 	 * el color.
 	 * 
 	 * @return numColor
@@ -73,25 +73,25 @@ public class CasillaJugada extends JPanel {
 	}
 
 	/**
-	 * Modifica el nÃºmero que identifica la posiciÃ³n del elemento del numerador que
-	 * representa el color. SÃ³lo puede ser de 0 a 5, ya que el 6 (negro) no se puede
-	 * utilizar aquÃ­. Esta funciÃ³n no se utiliza libremente, sÃ³lo serÃ¡ llamada por
+	 * Modifica el número que identifica la posición del elemento del enumerado que
+	 * representa el color. Sólo puede ser de 0 a 5, ya que el 6 (negro) no se puede
+	 * utilizar aquí. Esta función no se utiliza libremente, sólo será llamada por
 	 * acciones de teclado.
 	 * 
 	 * @param num entero de -1 a 6
 	 */
 	public void setColor(int num) {
-		// NÃºmero que recibirÃ¡ las modificaciones.
+		// Número que recibirá las modificaciones.
 		int numColor = num;
 
-		// Si el nÃºmero es menor a 0 (-1) numColor valdrÃ¡ 5 (azul);
+		// Si el número es menor a 0 (-1) numColor valdrá 5 (azul);
 		if (num < 0)
 			numColor = Colores.values().length - 2;
-		// Si el nÃºmero es mayoro igual a 6 (negro) numColor valdrÃ¡ 0 (rojo);
+		// Si el número es mayor o igual a 6 (negro) numColor valdrá 0 (rojo);
 		if (num >= Colores.values().length - 1)
 			numColor = 0;
 
-		// La variable que recoge el nÃºmero de color de esta casilla se actualiza.
+		// La variable que recoge el número de color de esta casilla se actualiza.
 		this.numColor = numColor;
 		// Se modifica el color que se muestra en la etiqueta color.
 		this.color.setIcon(Colores.values()[numColor].getColor());
@@ -99,7 +99,7 @@ public class CasillaJugada extends JPanel {
 	}
 
 	/**
-	 * Devuelve la situaciÃ³n de la casilla actual. Si la respuesta del jugador es
+	 * Devuelve la situación de la casilla actual. Si la respuesta del jugador es
 	 * correcta o no.
 	 * 
 	 * @return acertada

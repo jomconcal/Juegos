@@ -8,12 +8,12 @@ public class Logica {
 
 
 	/**
-	 * Calcula c√∫antos colores est√°n dentro de su sitio y c√∫antos est√°n fuera. El
-	 * primer valor ser√° el de dentro y el segundo el de fuera.
+	 * Calcula cu·ntos colores est·n dentro de su sitio y cu·ntos est·n fuera. El
+	 * primer valor ser· el de dentro y el segundo el de fuera.
 	 * 
 	 * @param jugadas las casillas que han sido respondidas
 	 * @param soluciones las Soluciones preestablecidas
-	 * @return int[] aciertos Posici√≥n 0 en su sitio, posici√≥n 1 fuera de sitio. 
+	 * @return int[] aciertos PosiciÛn 0 en su sitio, posiciÛn 1 fuera de sitio. 
 	 */
 	public static int[] valorAciertos(CasillaJugada[] jugadas, CasillaSolucion[] soluciones) {
 		int[] aciertos = new int[2];
@@ -55,7 +55,7 @@ public class Logica {
 	}
 
 	/**
-	 * Reiniciar el atributo de comprobaci√≥n de las casillas a false
+	 * Reiniciar el atributo de comprobaciÛn de las casillas a false
 	 * 
 	 * @param soluciones CasillaSolucion[]
 	 */
